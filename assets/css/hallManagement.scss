@@ -1,0 +1,70 @@
+---
+---
+
+.hallManagement {
+	display: flex;
+	justify-content: center;
+
+	padding-top: 16px;
+	padding-bottom: 64px;
+}
+
+.hallMaster {
+	flex-basis: 360px;
+	text-align: center;
+}
+
+.hallMaster .title {
+	padding: 16px;
+
+	font-family: Cambria;
+	font-weight: bold;
+	font-size: 30px;
+	color: #c6335c;
+	letter-spacing: 2px;
+}
+
+.hallMaster .avatar {
+	width: 256px;
+	height: 256px;
+	border-radius: 1024px;
+
+	object-fit: cover;
+	text-align: center;
+}
+
+.hallMaster .name {
+	padding: 16px;
+
+	font-family: Cambria;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.hallMaster .description {
+	border-radius: 20px;
+	padding: 16px;
+	color: white;
+	font-size: 14px;
+	line-height: 2;
+	background-color: #c6335c;
+	text-align: center;
+
+}
+
+.residenceTutors {
+	flex-basis: 640px;
+}
+
+
+.residenceTutors .title {
+	padding: 16px;
+
+	text-align: center;
+
+	font-family: Cambria;
+	font-weight: bold;
+	font-size: 30px;
+	color: #c6335c;
+	letter-spacing: 2px;
+}

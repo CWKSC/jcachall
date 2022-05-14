@@ -1,0 +1,152 @@
+---
+---
+
+.banner {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+
+.banner .textContainer {
+	flex-grow: 1;
+	flex-basis: 50%;
+
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.textContainer .centerBox {
+	position: relative;
+	width: 90%;
+	height: 80%;
+}
+
+.centerBox b {
+	font-size: 5rem;
+}
+
+$left_AcademicExcellence: 0px;
+$left_BalancedDevelopment: 192px;
+$left_CommunityCitizenship: 96px;
+$left_AboutAbcCulture: 440px;
+
+@keyframes leftEaseIn_AcademicExcellence {
+	from {
+		left: $left_AcademicExcellence - 36px;
+		opacity: 0;
+	}
+
+	to {
+		left: $left_AcademicExcellence;
+		opacity: 1;
+	}
+}
+
+.AcademicExcellence {
+	opacity: 0;
+	position: absolute;
+	font-size: 3rem;
+	left: $left_AcademicExcellence;
+	animation-name: leftEaseIn_AcademicExcellence;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes leftEaseIn_BalancedDevelopment {
+	from {
+		left: $left_BalancedDevelopment - 36px;
+		opacity: 0;
+	}
+
+	to {
+		left: left_BalancedDevelopment;
+		opacity: 1;
+	}
+}
+
+.BalancedDevelopment {
+	opacity: 0;
+	position: absolute;
+	top: 96px;
+	left: $left_BalancedDevelopment;
+	font-size: 3rem;
+	animation-name: leftEaseIn_BalancedDevelopment;
+	animation-duration: 1s;
+	animation-delay: 0.8s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes leftEaseIn_CommunityCitizenship {
+	from {
+		left: $left_CommunityCitizenship - 36px;
+		opacity: 0;
+	}
+
+	to {
+		left: $left_CommunityCitizenship;
+		opacity: 1;
+	}
+}
+
+.CommunityCitizenship {
+	opacity: 0;
+	position: absolute;
+	top: 192px;
+	left: $left_CommunityCitizenship;
+	font-size: 3rem;
+	animation-name: leftEaseIn_CommunityCitizenship;
+	animation-duration: 1s;
+	animation-delay: 1.6s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes leftEaseIn_AboutAbcCulture {
+	from {
+		left: $left_AboutAbcCulture - 36px;
+		opacity: 0;
+	}
+
+	to {
+		left: $left_AboutAbcCulture;
+		opacity: 1;
+	}
+}
+
+.AboutAbcCulture {
+	opacity: 0;
+	position: absolute;
+	font-size: 20px;
+	top: 340px;
+	left: $left_AboutAbcCulture;
+	animation-name: leftEaseIn_AboutAbcCulture;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+.AboutAbcCulture a {
+	text-decoration: none;
+	color: black;
+	padding: 16px;
+	border: 1px solid #000;
+	transition: background-color .25s ease-in-out;
+}
+
+.AboutAbcCulture a:hover {
+	background-color: black;
+	color: white;
+}
+
+.banner .rightSide {
+	flex-grow: 1;
+	flex-basis: 30%;
+	padding-right: 32px;
+	padding-top: 32px;
+}
+
+.logo {
+	height: 100vh;
+	background: linear-gradient(180deg, transparent 70%, white 100%),
+		url(../../../assets/image/jcaclogo_crop.jpg) no-repeat center center / contain;
+}

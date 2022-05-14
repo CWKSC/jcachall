@@ -1,0 +1,30 @@
+---
+---
+
+
+.paddingSpace {
+    height: 400px;
+}
+
+.embedYoutubeContainer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.embedYoutubeContainer iframe {
+    flex-basis: 720px;
+    width: 720px;
+    height: 400px;
+    padding-left: 96px;
+    padding-right: 32px;
+}
+
+.embedYoutubeContainer .description {
+    flex: 1;
+
+    padding-right: 64px;
+
+    font-size: 20px;
+    line-height: 1.5;
+}
+

@@ -1,0 +1,5 @@
+---
+layout: hallManagement
+permalink: /hallManagement/
+---
+

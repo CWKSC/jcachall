@@ -1,0 +1,12 @@
+---
+---
+
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch
+}
+
+@import url(home/banner.css);
+@import url(home/embedYoutube.css);
+@import url(home/posts.css);
