@@ -27,7 +27,7 @@
 .hallMaster .avatar {
 	width: 256px;
 	height: 256px;
-	border-radius: 1024px;
+	border-radius: 50%;
 
 	object-fit: cover;
 	text-align: center;
@@ -53,7 +53,7 @@
 }
 
 .residenceTutors {
-	flex-basis: 640px;
+	flex-basis: 740px;
 }
 
 
@@ -68,3 +68,50 @@
 	color: #c6335c;
 	letter-spacing: 2px;
 }
+
+.residenceTutors .tutorsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.tutorsContainer .tutor {
+	display: flex;
+	flex-direction: row;
+	width: 340px;
+	padding: 8px;
+}
+
+.tutor .avatar {
+	width: 115px;
+	height: 115px;
+	border-radius: 50%;
+	
+	object-fit: cover;
+	text-align: center;
+}
+
+.tutor .rightSide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 8px;
+}
+
+.tutor .floorAndName {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Cambria;
+}
+
+.tutor .description {
+	padding: 8px;
+	font-size: 14px;
+	font-family: Cambria;
+}
+
+
+
+

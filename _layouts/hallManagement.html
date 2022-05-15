@@ -11,7 +11,7 @@ permalink: /hallManagement/
             HALL MASTER
         </div>
 
-        <img class="avatar" src="/assets/hallManagement/Ben.jpg">
+        <img class="avatar" src="{{ site.url }}{{ site.baseurl }}/assets/hallManagement/Ben.jpg">
 
         <div class="name">
             Prof. Ben LEUNG
@@ -26,6 +26,27 @@ permalink: /hallManagement/
 
         <div class="title">
             RESIDENCE TUTORS
+        </div>
+
+        <div class="tutorsContainer">
+
+            {% for tutor in page.tutors %}
+            <div class="tutor">
+                <img class="avatar" src="{{ site.url }}{{ site.baseurl }}/assets/hallManagement/{{ tutor.avatar }}">
+
+                <div class="rightSide">
+                    <div class="floorAndName">
+                        {{ tutor.floorAndName }}
+                    </div>
+                    
+                    <div class="description">
+                        {{ tutor.description }}
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+
         </div>
 
     </div>
