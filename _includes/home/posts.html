@@ -7,7 +7,7 @@
     <div class="postsContainer">
 
         {% assign sorted_posts = site.posts | sort:"date" %}
-        {% for post in sorted_posts %}
+        {% for post in sorted_posts reversed %}
         <div class="post">
             
             {% if post.linkToOtherUrl %}
@@ -20,7 +20,7 @@
                 </div>
             </a>
             {% else %}
-            <a href="{{ post.url }}">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
                 <div class="imageBox">
                     <img src="{{ post.image }}" />
                 </div>
