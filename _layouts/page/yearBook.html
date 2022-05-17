@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<div class="yearBook">
+
+    <div class="yearBookContainer">
+
+        {% for yearBook in page.yearBooks %}
+        <a href="{{ yearBook.link }}">
+            {{ yearBook.title }}
+        <a>
+        {% endfor %}
+
+    </div>
+
+
+</div>

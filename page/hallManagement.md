@@ -1,5 +1,5 @@
 ---
-layout: hallManagement
+layout: page/hallManagement
 permalink: /hallManagement/
 tutors: 
   - avatar: Chester_crop.jpg
