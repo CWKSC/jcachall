@@ -2,7 +2,7 @@
 layout: post
 title:  "PEK 4*100m Inter-hall Relay"
 date:   2022-04-30 23:36:02 +0800
-image: assets/image/post/pek_4x100.jpg
+image: assets/post/2022-04-30-PEK-4_100m-Inter-hall-Relay/pek_4x100.jpg
 excerpt: "On October 17, PEK 4*100M Inter Hall Relay was held at the Joint Sports Center. I am proud to announce that our Hall 4 representative team achieved marvellous results in this race."
 linkToOtherUrl: https://mp.weixin.qq.com/s/vReemIdfCFJ7djOM1ZHF_A
 ---

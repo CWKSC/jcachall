@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+<div class="facilites">
+
+    {% for facilites in page.facilitesList %}
+    <div class="facilitesByTitle">
+        <div class="title">
+            {{ facilites.title }}
+        </div>
+        <div class="facilitesContainer">
+            {% for facilite in facilites.facilites %}
+            <div class="facilite">
+                <div class="name">
+                    {{ facilite.name }}
+                </div>
+                <img class="image" src="{{ site.url }}{{ site.baseurl }}/assets/page/facilites/{{ facilite.imageLink }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+</div>

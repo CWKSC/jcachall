@@ -1,0 +1,38 @@
+---
+---
+
+.facilites {
+    padding: 128px;
+}
+
+.facilites .facilitesByTitle {
+    margin-bottom: 64px;
+}
+
+.facilites .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.facilites .facilitesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.facilites .facilite {
+    width: 390px;
+    padding: 8px;
+}
+
+.facilites .facilite .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.facilites .facilite img {
+    width: 100%;
+}
+
+
