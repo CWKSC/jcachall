@@ -8,27 +8,41 @@
     padding: 64px;
 }
 
-.footer .ContactInfo {
+.footer .contactInfo {
     flex: 2;
     line-height: 1.5;
 }
 
-.ContactInfo .ContactInfoTitle {
+.contactInfo .title {
     font-size: 20px;
     font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria;
 }
 
-.footer .FollowUs {
+.footer .followUs {
     flex: 2;
 }
 
-.FollowUs .FollowUsTitle {
+.followUs .title {
+    padding-bottom: 32px;
+
+    font-family: Cambria;
     font-size: 20px;
     font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.footer .Icon {
+.followUs .facebookIcon img {
+    width: 64px;
+}
+
+.followUs .instagramIcon img {
+    width: 80px;
+}
+
+.footer .icon {
     flex: 1;
+}
+
+.footer .icon .cityuIcon img {
+    width: 220px;
 }
