@@ -1,16 +1,18 @@
-
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/posts.css">
 
 <div class="posts">
 
+    <!-- home page display limit 10 posts -->
+    {% if page.name == 'home.md' %}
+
     {% assign sorted_posts = site.posts | sort:"date" %}
-    {% for post in sorted_posts reversed %}
+    {% for post in sorted_posts reversed limit:10 %}
     <div class="post">
-        
-        {% if post.linkToOtherUrl %}
-        <a href="{{ post.linkToOtherUrl }}">
+
+        {% if post.linkToOther %}
+        <a href="{{ post.linkToOther }}">
             <div class="imageBox">
-                <img src="{{ site.url }}{{ site.baseurl }}/{{ post.image }}" />
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/post/{{ post.image }}" />
             </div>
             <div class="title">
                 {{ post.title }}
@@ -19,7 +21,7 @@
         {% else %}
         <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
             <div class="imageBox">
-                <img src="{{ site.url }}{{ site.baseurl }}/{{ post.image }}" />
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/post/{{ post.image }}" />
             </div>
             <div class="title">
                 {{ post.title }}
@@ -33,4 +35,40 @@
 
     </div>
     {% endfor %}
+
+    {% else %}
+
+    {% assign sorted_posts = site.posts | sort:"date" %}
+    {% for post in sorted_posts reversed %}
+    <div class="post">
+
+        {% if post.linkToOther %}
+        <a href="{{ post.linkToOther }}">
+            <div class="imageBox">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/post/{{ post.image }}" />
+            </div>
+            <div class="title">
+                {{ post.title }}
+            </div>
+        </a>
+        {% else %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+            <div class="imageBox">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/post/{{ post.image }}" />
+            </div>
+            <div class="title">
+                {{ post.title }}
+            </div>
+        </a>
+        {% endif %}
+
+        <div class="excerpt">
+            {{ post.excerpt }}
+        </div>
+
+    </div>
+    {% endfor %}
+
+    {% endif %}
+
 </div>
