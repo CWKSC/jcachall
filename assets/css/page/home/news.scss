@@ -12,3 +12,22 @@
 .news .newsContainer {
     padding: 32px;
 }
+
+.news .more {
+    padding-left: 64px;
+    padding-bottom: 128px;
+}
+
+.news .more a {
+	text-decoration: none;
+    font-size: 24px;
+	color: black;
+	padding: 16px;
+	border: 1px solid #000;
+	transition: background-color .25s ease-in-out;
+}
+
+.news .more a:hover {
+	background-color: black;
+	color: white;
+}
