@@ -152,3 +152,57 @@ $left_AboutAbcCulture: 440px;
 	background: linear-gradient(180deg, transparent 70%, white 100%),
 		$logo_url no-repeat center center / contain;
 }
+
+
+@media (max-width: 700px) {
+	
+	$left_AcademicExcellence: 0px;
+	$left_BalancedDevelopment: 16px;
+	$left_CommunityCitizenship: 32px;
+	$left_AboutAbcCulture: 440px;
+
+    .AcademicExcellence {
+		top: 0;
+		left: 0;
+    }
+
+	@keyframes leftEaseIn_BalancedDevelopment {
+		from {
+			left: $left_BalancedDevelopment - 36px;
+			opacity: 0;
+		}
+
+		to {
+			left: left_BalancedDevelopment;
+			opacity: 1;
+		}
+	}
+
+	.BalancedDevelopment {
+		top: 180px;
+		left: $left_BalancedDevelopment;
+	}
+
+	@keyframes leftEaseIn_CommunityCitizenship {
+		from {
+			left: $left_CommunityCitizenship - 36px;
+			opacity: 0;
+		}
+
+		to {
+			left: $left_CommunityCitizenship;
+			opacity: 1;
+		}
+	}
+
+	.CommunityCitizenship {
+		top: 370px;
+		left: $left_CommunityCitizenship;
+	}
+
+	.rightSide {
+		display: none;
+	}
+
+}
+
