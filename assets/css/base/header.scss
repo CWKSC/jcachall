@@ -48,6 +48,7 @@
 }
 
 
+
 @media (max-width: 700px) {
     .header .text {
         padding-top: 16px;
@@ -59,3 +60,11 @@
     }
 }
 
+@media (max-width: 300px) {
+    .header .text {
+        font-size: 32px;
+    }
+    .header .button {
+        font-size: 18px;
+    }
+}

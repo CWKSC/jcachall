@@ -2,57 +2,56 @@
 ---
 
 .footer {
-    display: flex;
-    background-color: black;
-    color: white;
-    padding: 64px;
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 64px;
 }
 
 .footer .contactInfo {
-    flex: 2;
-    line-height: 1.5;
-    padding-bottom: 32px;
+  flex: 2;
+  line-height: 1.5;
+  padding-bottom: 32px;
 }
 
 .contactInfo .title {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Cambria;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Cambria;
 }
 
 .footer .followUs {
-    flex: 2;
-    padding-bottom: 32px;
+  flex: 2;
+  padding-bottom: 32px;
 }
 
 .followUs .title {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 
-    font-family: Cambria;
-    font-size: 20px;
-    font-weight: bold;
+  font-family: Cambria;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .followUs .facebookIcon img {
-    width: 64px;
+  width: 64px;
 }
 
 .followUs .instagramIcon img {
-    width: 80px;
+  width: 80px;
 }
 
 .footer .icon {
-    flex: 1;
-    padding-bottom: 32px;
+  flex: 1;
+  padding-bottom: 32px;
 }
 
 .footer .icon .cityuIcon img {
-    width: 220px;
+  width: 220px;
 }
 
-
 @media (max-width: 700px) {
-    .footer {
-        flex-direction: column;
-    }
+  .footer {
+    flex-direction: column;
+  }
 }

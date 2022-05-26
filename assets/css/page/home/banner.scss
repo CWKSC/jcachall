@@ -2,247 +2,241 @@
 ---
 
 .banner {
-	display: flex;
-	flex-direction: row;
-	height: 100vh;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
 
 $logo_url: url(../../../../assets/page/home/jcaclogo_optimal.jpg);
 
 .banner .textContainer {
-	flex-grow: 1;
-	flex-basis: 50%;
+  flex-grow: 1;
+  flex-basis: 50%;
 
-	display: flex;
-	justify-content: right;
-	align-items: center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .textContainer .centerBox {
-	position: relative;
-	width: 90%;
-	height: 80%;
+  position: relative;
+  width: 90%;
+  height: 80%;
 }
 
 .centerBox b {
-	font-size: 5rem;
+  font-size: 5rem;
 }
 
-$left_AcademicExcellence: 0px;
-$left_BalancedDevelopment: 192px;
-$left_CommunityCitizenship: 96px;
-$left_AboutAbcCulture: 440px;
+$left_academicExcellence: 0px;
+$left_balancedDevelopment: 192px;
+$left_communityCitizenship: 96px;
+$left_aboutAbcCulture: 440px;
 
-@keyframes leftEaseIn_AcademicExcellence {
-	from {
-		left: $left_AcademicExcellence - 36px;
-		opacity: 0;
-	}
+@keyframes leftEaseIn_academicExcellence {
+  from {
+    left: $left_academicExcellence - 36px;
+    opacity: 0;
+  }
 
-	to {
-		left: $left_AcademicExcellence;
-		opacity: 1;
-	}
+  to {
+    left: $left_academicExcellence;
+    opacity: 1;
+  }
 }
 
-.AcademicExcellence {
-	opacity: 0;
-	position: absolute;
-	font-size: 3rem;
-	left: $left_AcademicExcellence;
-	animation-name: leftEaseIn_AcademicExcellence;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+.academicExcellence {
+  opacity: 0;
+  position: absolute;
+  font-size: 3rem;
+  left: $left_academicExcellence;
+  animation-name: leftEaseIn_academicExcellence;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes leftEaseIn_BalancedDevelopment {
-	from {
-		left: $left_BalancedDevelopment - 36px;
-		opacity: 0;
-	}
+@keyframes leftEaseIn_balancedDevelopment {
+  from {
+    left: $left_balancedDevelopment - 36px;
+    opacity: 0;
+  }
 
-	to {
-		left: left_BalancedDevelopment;
-		opacity: 1;
-	}
+  to {
+    left: left_balancedDevelopment;
+    opacity: 1;
+  }
 }
 
-.BalancedDevelopment {
-	opacity: 0;
-	position: absolute;
-	top: 96px;
-	left: $left_BalancedDevelopment;
-	font-size: 3rem;
-	animation-name: leftEaseIn_BalancedDevelopment;
-	animation-duration: 1s;
-	animation-delay: 0.8s;
-	animation-fill-mode: forwards;
+.balancedDevelopment {
+  opacity: 0;
+  position: absolute;
+  top: 96px;
+  left: $left_balancedDevelopment;
+  font-size: 3rem;
+  animation-name: leftEaseIn_balancedDevelopment;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes leftEaseIn_CommunityCitizenship {
-	from {
-		left: $left_CommunityCitizenship - 36px;
-		opacity: 0;
-	}
+@keyframes leftEaseIn_communityCitizenship {
+  from {
+    left: $left_communityCitizenship - 36px;
+    opacity: 0;
+  }
 
-	to {
-		left: $left_CommunityCitizenship;
-		opacity: 1;
-	}
+  to {
+    left: $left_communityCitizenship;
+    opacity: 1;
+  }
 }
 
-.CommunityCitizenship {
-	opacity: 0;
-	position: absolute;
-	top: 192px;
-	left: $left_CommunityCitizenship;
-	font-size: 3rem;
-	animation-name: leftEaseIn_CommunityCitizenship;
-	animation-duration: 1s;
-	animation-delay: 1.6s;
-	animation-fill-mode: forwards;
+.communityCitizenship {
+  opacity: 0;
+  position: absolute;
+  top: 192px;
+  left: $left_communityCitizenship;
+  font-size: 3rem;
+  animation-name: leftEaseIn_communityCitizenship;
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes leftEaseIn_AboutAbcCulture {
-	from {
-		left: $left_AboutAbcCulture - 36px;
-		opacity: 0;
-	}
+@keyframes leftEaseIn_aboutAbcCulture {
+  from {
+    left: $left_aboutAbcCulture - 36px;
+    opacity: 0;
+  }
 
-	to {
-		left: $left_AboutAbcCulture;
-		opacity: 1;
-	}
+  to {
+    left: $left_aboutAbcCulture;
+    opacity: 1;
+  }
 }
 
-.AboutAbcCulture {
-	opacity: 0;
-	position: absolute;
-	font-size: 20px;
-	top: 340px;
-	left: $left_AboutAbcCulture;
-	animation-name: leftEaseIn_AboutAbcCulture;
-	animation-duration: 1s;
-	animation-delay: 2s;
-	animation-fill-mode: forwards;
+.aboutAbcCulture {
+  opacity: 0;
+  position: absolute;
+  font-size: 20px;
+  top: 340px;
+  left: $left_aboutAbcCulture;
+  animation-name: leftEaseIn_aboutAbcCulture;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
-.AboutAbcCulture a {
-	text-decoration: none;
-	color: black;
-	padding: 16px;
-	border: 1px solid #000;
-	transition: background-color .25s ease-in-out;
+.aboutAbcCulture a {
+  text-decoration: none;
+  color: black;
+  padding: 16px;
+  border: 1px solid #000;
+  transition: background-color 0.25s ease-in-out;
 }
 
-.AboutAbcCulture a:hover {
-	background-color: black;
-	color: white;
+.aboutAbcCulture a:hover {
+  background-color: black;
+  color: white;
 }
 
 .banner .rightSide {
-	flex-grow: 1;
-	flex-basis: 30%;
-	padding-right: 32px;
-	padding-top: 32px;
+  flex-grow: 1;
+  flex-basis: 30%;
+  padding-right: 32px;
+  padding-top: 32px;
 }
 
 .logo {
-	height: 100vh;
-	background: linear-gradient(180deg, transparent 70%, white 100%),
-		$logo_url no-repeat center center / contain;
+  height: 100vh;
+  background: linear-gradient(180deg, transparent 70%, white 100%),
+    $logo_url no-repeat center center / contain;
 }
 
+@media (max-width: 1360px) {
+  .banner {
+    height: 390px;
+  }
 
-@media (max-width: 700px) {
+  .banner .textContainer {
+    padding-top: 32px;
+  }
 
-	.banner {
-		height: 390px;
-	}
+  .textContainer .centerBox {
+    position: relative;
+    width: 90%;
+    height: 90%;
+  }
 
-	.banner .textContainer {
-		padding-top: 32px;
-	}
-	
+  .centerBox b {
+    font-size: 4rem;
+  }
 
-	.textContainer .centerBox {
-		position: relative;
-		width: 90%;
-		height: 90%;
-	}
+  $left_academicExcellence: 0px;
+  $left_balancedDevelopment: 0px;
+  $left_communityCitizenship: 0px;
+  $left_aboutAbcCulture: 0px;
 
-	.centerBox b {
-		font-size: 4rem;
-	}
-	
-	$left_AcademicExcellence: 0px;
-	$left_BalancedDevelopment: 0px;
-	$left_CommunityCitizenship: 0px;
-	$left_AboutAbcCulture: 0px;
+  .academicExcellence {
+    top: 0;
+    left: 0;
+    font-size: 1.8rem;
+  }
 
-    .AcademicExcellence {
-		top: 0;
-		left: 0;
-		font-size: 1.8rem;
+  @keyframes leftEaseIn_balancedDevelopment {
+    from {
+      left: $left_balancedDevelopment - 36px;
+      opacity: 0;
     }
 
-	@keyframes leftEaseIn_BalancedDevelopment {
-		from {
-			left: $left_BalancedDevelopment - 36px;
-			opacity: 0;
-		}
+    to {
+      left: left_balancedDevelopment;
+      opacity: 1;
+    }
+  }
 
-		to {
-			left: left_BalancedDevelopment;
-			opacity: 1;
-		}
-	}
+  .balancedDevelopment {
+    top: 90px;
+    left: $left_balancedDevelopment;
+    font-size: 1.8rem;
+  }
 
-	.BalancedDevelopment {
-		top: 90px;
-		left: $left_BalancedDevelopment;
-		font-size: 1.8rem;
-	}
+  @keyframes leftEaseIn_communityCitizenship {
+    from {
+      left: $left_communityCitizenship - 36px;
+      opacity: 0;
+    }
 
-	@keyframes leftEaseIn_CommunityCitizenship {
-		from {
-			left: $left_CommunityCitizenship - 36px;
-			opacity: 0;
-		}
+    to {
+      left: $left_communityCitizenship;
+      opacity: 1;
+    }
+  }
 
-		to {
-			left: $left_CommunityCitizenship;
-			opacity: 1;
-		}
-	}
+  .communityCitizenship {
+    top: 180px;
+    left: $left_communityCitizenship;
+    font-size: 1.8rem;
+  }
 
-	.CommunityCitizenship {
-		top: 180px;
-		left: $left_CommunityCitizenship;
-		font-size: 1.8rem;
-	}
+  @keyframes leftEaseIn_aboutAbcCulture {
+    from {
+      left: $left_aboutAbcCulture - 36px;
+      opacity: 0;
+    }
 
-	
-	@keyframes leftEaseIn_AboutAbcCulture {
-		from {
-			left: $left_AboutAbcCulture - 36px;
-			opacity: 0;
-		}
+    to {
+      left: $left_aboutAbcCulture;
+      opacity: 1;
+    }
+  }
 
-		to {
-			left: $left_AboutAbcCulture;
-			opacity: 1;
-		}
-	}
+  .aboutAbcCulture {
+    top: 300px;
+    left: $left_aboutAbcCulture;
+  }
 
-	.AboutAbcCulture {
-		top: 300px;
-		left: $left_AboutAbcCulture;
-	}
-
-	.rightSide {
-		display: none;
-	}
-
+  .rightSide {
+    display: none;
+  }
 }
-

@@ -2,46 +2,45 @@
 ---
 
 .facilites {
-    padding: 128px;
+  padding: 128px;
 }
 
 .facilites .facilitesByTitle {
-    margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .facilites .title {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 32px;
 }
 
 .facilites .facilitesContainer {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .facilites .facilite {
-    width: 390px;
-    padding: 8px;
+  width: 390px;
+  padding: 8px;
 }
 
 .facilites .facilite .name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
 .facilites .facilite img {
-    width: 100%;
+  width: 100%;
 }
 
-
-
-@media (max-width: 700px) {
-    .facilites {
-        padding: 24px;
-        padding-top: 48px;
-    }
+@media (max-width: 1650px) {
+  .facilites {
+    padding: 24px;
+    padding-top: 48px;
+  }
+  .facilites .facilite {
+    width: 360px;
+  }
 }
-
-
