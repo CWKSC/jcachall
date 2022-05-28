@@ -4,23 +4,59 @@
 .posts {
   display: flex;
   flex-wrap: wrap;
-  padding: 32px;
-  gap: 16px;
+  padding: 2vw;
+  gap: 1vw;
 }
 
 .posts .post {
-  width: 330px;
+  width: 17vw;
 }
 
 .post .imageBox {
   width: 100%;
-  height: 210px;
+  height: 10vw;
   padding-bottom: 16px;
+}
+
+@media (max-width: 1400px) {
+  .posts .post {
+    width: 21vw;
+  }
+  .post .imageBox {
+    height: 21vw * 9 / 16;
+  }
+}
+
+@media (max-width: 1120px) {
+  .posts .post {
+    width: 29vw;
+  }
+  .post .imageBox {
+    height: 29vw * 9 / 16;
+  }
+}
+
+@media (max-width: 840px) {
+  .posts .post {
+    width: 44vw;
+  }
+  .post .imageBox {
+    height: 44vw * 9 / 16;
+  }
+}
+
+@media (max-width: 600px) {
+  .posts .post {
+    width: 85vw;
+  }
+  .post .imageBox {
+    height: 85vw * 9 / 16;
+  }
 }
 
 .post img {
   width: 100%;
-  max-height: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -28,7 +64,7 @@
   color: black;
   font-size: 20px;
   font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria;
 }
 
 .post a {

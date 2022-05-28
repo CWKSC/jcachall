@@ -10,7 +10,7 @@
 }
 
 .news .newsContainer {
-  padding: 32px;
+  padding: 2vw;
 }
 
 .news .more {
@@ -35,10 +35,6 @@
 @media (max-width: 700px) {
   .news .newsTitle {
     padding-left: 32px;
-  }
-
-  .news .newsContainer {
-    padding: 0px;
   }
 
   .news .more {
