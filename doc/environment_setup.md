@@ -1,10 +1,30 @@
 # Environment Setup
 
-Suggest to use Visual Studio Code as editor
+[GitHub Desktop](#GitHub Desktop)
 
-### Windows
+[Visual Studio Code](#Visual Studio Code)
+
+[Jekyll](#jekyll)
+
+[Typora](#Typora)
+
+## GitHub Desktop
+
+https://desktop.github.com/
+
+GitHub Desktop use for git repository management
+
+## Visual Studio Code
+
+https://code.visualstudio.com/
+
+Visual Studio Code as Editor
+
+## Jekyll
 
 Reference: https://jekyllrb.com/docs/installation/windows/
+
+Jekyll is core to build and run website
 
 Download RubyInstallers: https://rubyinstaller.org/downloads/
 
@@ -59,3 +79,13 @@ bundle exec jekyll serve
 ```
 
 It is same as what `run.ps1` do
+
+## Typora
+
+https://typora.io/releases/all
+
+Typora use for editing markdown file (.md)
+
+Typora start to charge after version 1.0.0
+
+You can download 0.11.18 version in <u>History Releases</u> > <u>Dev / Beta Releases</u> > <u>More Beta</u> > <u>old Windows / Linux beta</u>
