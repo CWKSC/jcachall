@@ -1,8 +1,8 @@
 # Environment Setup
 
-[GitHub Desktop](#GitHub Desktop)
+[GitHub Desktop](#GitHub-Desktop)
 
-[Visual Studio Code](#Visual Studio Code)
+[Visual Studio Code](#Visual-Studio-Code)
 
 [Jekyll](#jekyll)
 
@@ -14,19 +14,19 @@ https://desktop.github.com/
 
 GitHub Desktop use for git repository management
 
-![github_git_clone](image\github_git_clone.png)
+![github_git_clone](image/github_git_clone.png)
 
 git clone repository into your local computer
 
-![github_desktop](image\github_desktop.png)
+![github_desktop](image/github_desktop.png)
 
 Change will display, and to apply the change, write down the commit message (on left bottom) and click Commit to main
 
-![github_desktop_update](image\github_desktop_update.png)
+![github_desktop_update](image/github_desktop_update.png)
 
 Then click push origin (on  top middle black bar)
 
-![push](image\push.png)
+![push](image/push.png)
 
 ## Visual Studio Code
 
@@ -34,7 +34,7 @@ https://code.visualstudio.com/
 
 Visual Studio Code as Editor
 
-![vscode](image\vscode.png)
+![vscode](image/vscode.png)
 
 ## Jekyll
 
@@ -52,15 +52,15 @@ Download link on left side (WITH DEVKIT), the first one
 
 After run it, following will show on screen:
 
-![install_ruby](image\install_ruby.png)
+![install_ruby](image/install_ruby.png)
 
 Click Finish, 
 
-![install_ruby2](image\install_ruby2.png)
+![install_ruby2](image/install_ruby2.png)
 
 Press Enter to install by default
 
-![install_ruby3](image\install_ruby3.png)
+![install_ruby3](image/install_ruby3.png)
 
 Press Enter again to close
 
@@ -70,7 +70,7 @@ After it, close terminal and open a new one, run:
 gem install jekyll bundler
 ```
 
-![install_jekyll](image\install_jekyll.png)
+![install_jekyll](image/install_jekyll.png)
 
 To check is it installed, run:
 
@@ -84,7 +84,7 @@ Go under root of repository, run:
 bundle install
 ```
 
-![bundle_install](image\bundle_install.png)
+![bundle_install](image/bundle_install.png)
 
 To start server, run:
 
@@ -94,7 +94,7 @@ bundle exec jekyll serve
 
 It is same as what `run.ps1` do
 
-![run_server](image\run_server.png)
+![run_server](image/run_server.png)
 
 It will running on 127.0.0.1:4000, you can check out it for development preview
 
