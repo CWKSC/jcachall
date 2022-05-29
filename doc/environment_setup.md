@@ -14,17 +14,35 @@ https://desktop.github.com/
 
 GitHub Desktop use for git repository management
 
+![github_git_clone](image\github_git_clone.png)
+
+git clone repository into your local computer
+
+![github_desktop](image\github_desktop.png)
+
+Change will display, and to apply the change, write down the commit message (on left bottom) and click Commit to main
+
+![github_desktop_update](image\github_desktop_update.png)
+
+Then click push origin (on  top middle black bar)
+
+![push](image\push.png)
+
 ## Visual Studio Code
 
 https://code.visualstudio.com/
 
 Visual Studio Code as Editor
 
+![vscode](image\vscode.png)
+
 ## Jekyll
 
 Reference: https://jekyllrb.com/docs/installation/windows/
 
 Jekyll is core to build and run website
+
+Following is the installation guideline for **Windows**, please check the official documentation for other operating systems
 
 Download RubyInstallers: https://rubyinstaller.org/downloads/
 
@@ -34,31 +52,25 @@ Download link on left side (WITH DEVKIT), the first one
 
 After run it, following will show on screen:
 
-```
- _____       _           _____           _        _ _         ___
-|  __ \     | |         |_   _|         | |      | | |       |__ \
-| |__) |   _| |__  _   _  | |  _ __  ___| |_ __ _| | | ___ _ __ ) |
-|  _  / | | | '_ \| | | | | | | '_ \/ __| __/ _` | | |/ _ \ '__/ /
-| | \ \ |_| | |_) | |_| |_| |_| | | \__ \ || (_| | | |  __/ | / /_
-|_|  \_\__,_|_.__/ \__, |_____|_| |_|___/\__\__,_|_|_|\___|_||____|
-                    __/ |           _
-                   |___/          _|_ _  __   | | o __  _| _     _
-                                   | (_) |    |^| | | |(_|(_)\^/_>
+![install_ruby](image\install_ruby.png)
 
-   1 - MSYS2 base installation
-   2 - MSYS2 system update (optional)
-   3 - MSYS2 and MINGW development toolchain
+Click Finish, 
 
-Which components shall be installed? If unsure press ENTER [1,2,3]
-```
+![install_ruby2](image\install_ruby2.png)
 
 Press Enter to install by default
+
+![install_ruby3](image\install_ruby3.png)
+
+Press Enter again to close
 
 After it, close terminal and open a new one, run:
 
 ```
 gem install jekyll bundler
 ```
+
+![install_jekyll](image\install_jekyll.png)
 
 To check is it installed, run:
 
@@ -72,6 +84,8 @@ Go under root of repository, run:
 bundle install
 ```
 
+![bundle_install](image\bundle_install.png)
+
 To start server, run:
 
 ```
@@ -79,6 +93,10 @@ bundle exec jekyll serve
 ```
 
 It is same as what `run.ps1` do
+
+![run_server](image\run_server.png)
+
+It will running on 127.0.0.1:4000, you can check out it for development preview
 
 ## Typora
 
